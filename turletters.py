@@ -2,7 +2,7 @@ import turtle
 
 def turtleLetter(letter,tur):
     if letter=="box":
-        tur.setheading(0)
+        tur.setheading(1)
         tur.forward(40)
         tur.right(90)
         tur.forward(60)
@@ -52,7 +52,20 @@ def turtleLetter(letter,tur):
     elif letter == "K":
 	    pass
     elif letter == "L":
-	    pass
+        tur.setheading(0)
+        tur.pu()
+        tur.fd(5)
+        tur.right(90)
+        tur.fd(5)
+        tur.pd()
+        tur.fd(50)
+        tur.left(90)
+        tur.fd(30)
+        tur.pu()
+        tur.fd(5)
+        tur.left(90)
+        tur.fd(55)
+        tur.right(90)
     elif letter == "M":
 	    pass
     elif letter == "N":
@@ -74,7 +87,24 @@ def turtleLetter(letter,tur):
     elif letter == "V":
 	    pass
     elif letter == "W":
-	    pass
+	tur.setheading(0)
+        tur.pu()
+        tur.fd(5)
+        tur.right(90)
+        tur.fd(5)
+        tur.pd()
+        tur.left(45)
+        tur.fd(15)
+        tur.left(90)
+        tur.fd(10)
+        tur.right(90)
+        tur.fd(10)
+        tur.left(90)
+        tur.fd(15)
+        tur.pu()
+        tur.left(45)
+        tur.fd(5)
+        tur.right(90)
     elif letter == "X":
 	    pass
     elif letter == "Y":
@@ -99,7 +129,7 @@ def turtleLetter(letter,tur):
 
 window = turtle.Screen()
 tur = turtle.Turtle()
-tur.speed(1)
+tur.speed(100)
 turtleLetter("box",tur)
 turtleLetter("A",tur)
 
